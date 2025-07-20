@@ -24,13 +24,13 @@ class ANN:
     def relu_manual(self, x):
         # TODO 1: Implement ReLU manually using torch operations
         # Formula: ReLU(x) = max(0, x)
-        raise NotImplementedError()
+        raise NotImplementedError("Write your code here")
         return 
 
     def sigmoid_manual(self, x):
         # TODO 2: Implement Sigmoid manually using torch operations
         # Formula: Sigmoid(x) = 1 / (1 + exp(-x))
-        raise NotImplementedError()
+        raise NotImplementedError("Write your code here")
         return 
 
     def _forward(self, X):
@@ -41,14 +41,14 @@ class ANN:
         #   2. Apply activation: ReLU for hidden, Sigmoid for output
         A = X
         for i in range(len(self.weights)):
-            raise NotImplementedError()
+            raise NotImplementedError("Write your code here")
         return A
 
     def _compute_loss(self, y_hat, y_true):
         y_hat = torch.clamp(y_hat, 1e-7, 1 - 1e-7)
         # TODO 4: Write loss function to compute binary cross-entropy
         # Formula: -mean(y*log(ŷ) + (1-y)*log(1-ŷ))
-        raise NotImplementedError()
+        raise NotImplementedError("Write your code here")
         return
 
     def train_one_epoch(self, X_np, y_np):
@@ -68,10 +68,10 @@ class ANN:
 
     def predict_proba(self, X_np):
         # TODO 5: Convert input to tensor and return predicted probabilities
-        raise NotImplementedError()
+        raise NotImplementedError("Write your code here")
         return 
 
     def predict(self, X_np):
         # TODO 6: Use your prefered threshold (e.g 0.5) to return binary class predictions
-        raise NotImplementedError()
+        raise NotImplementedError("Write your code here")
         return 

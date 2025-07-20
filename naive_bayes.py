@@ -38,7 +38,7 @@ class NaiveBayesTextClassifier:
             #  Step 2: Add 1 to every count for Laplace smoothing to avoid log(0)
             #  Step 3: Normalize by the total smoothed word count
             #  Step 4: Take log to prepare for log-probability summation
-            raise NotImplementedError()
+            raise NotImplementedError("Write your code here")
 
     def predict(self, X):
         """
